@@ -26,8 +26,4 @@
   @else if $class == desktop {
     @media (min-width: 768px) { @content; }
   }
-
-  @else {
-      @warn "Breakpoint mixin supports: xs, sm, md, lg";
-  }
 }
