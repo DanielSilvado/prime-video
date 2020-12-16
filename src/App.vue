@@ -1,52 +1,21 @@
 <template>
-  <div id="hello">
-    <div class="wrapper">
-      <div class="typing">Welcome to the Vue.js Template 😉</div>
-    </div>
-  </div>
+  <v-app id="inspire">
+    <router-view />
+  </v-app>
 </template>
 <script>
 export default {
-  name: "Hello"
+  name: "App"
 };
 </script>
 
 <style lang="scss">
-#hello {
+@import '@/styles/Variables.scss';
+@import '@/styles/Base.scss';
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#inspire {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-
-  .wrapper {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .typing {
-    width: 30ch;
-    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-size: 1.6em;
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-  }
-
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
 }
 </style>

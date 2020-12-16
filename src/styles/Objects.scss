@@ -1,0 +1,10 @@
+@import "./Variables.scss";
+
+%primary-button {
+  background-color: $color-primary !important;
+  color: $color-text ;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}

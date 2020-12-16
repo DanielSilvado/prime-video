@@ -1,0 +1,20 @@
+@import "./Variables.scss";
+
+html {
+  font-size: 62.5% !important;
+  overflow-y: auto !important;
+}
+
+body {
+  font-size: 1.6rem !important;
+  font-family: 'Roboto', sans-serif !important;
+  height: 100vh;
+  width: 100%;
+}
+
+.v-application,
+.v-sheet {
+  background-color: $color-background !important;
+  color: $color-text !important;
+  
+}
